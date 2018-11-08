@@ -64,8 +64,9 @@ end
 
 def self.find_by_name(name_from_db)
   binding.pry
-  self.map do |name_from_db|
-  end 
+  self.map do |name|
+    name == name_from_db
+  end
 end
 
 end
