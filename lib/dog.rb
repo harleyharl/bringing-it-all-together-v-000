@@ -69,7 +69,7 @@ def self.find_by_name(name_from_db)
   # end
   binding.pry
   DB[:conn].execute("SELECT * FROM dogs WHERE name = ?", name_from_db)
-  self.new(name: name_from_db[1] , breed: name_from_db[2] , id: name_from_db[0])
+  self.new(name: name_from_db[0][1] , breed: name_from_db[0][2] , id: name_from_db[0][0])
 end
 
 end
