@@ -67,7 +67,9 @@ def self.find_by_name(name_from_db)
   # self.map do |name|
   #   name == name_from_db
   # end
+  binding.pry
   DB[:conn].execute("SELECT * FROM dogs WHERE name = ?", name_from_db)
+
 end
 
 end
