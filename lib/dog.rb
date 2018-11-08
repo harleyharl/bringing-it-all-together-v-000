@@ -63,7 +63,7 @@ def self.new_from_db(db_row)
 end
 
 def self.find_by_name(name_from_db)
-  binding.pry
+  # binding.pry
   self.map do |name|
     name == name_from_db
   end
