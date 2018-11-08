@@ -58,7 +58,7 @@ def self.find_or_create_by(name:,breed:)
   end
 end
 
-def self.new_from_db
+def self.new_from_db(db_row)
   # DB[:conn].execute("SELECT * FROM dogs WHERE name = ? AND breed = ?", name, breed)
 end
 
