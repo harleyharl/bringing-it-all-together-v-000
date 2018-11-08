@@ -68,7 +68,7 @@ def self.find_by_name(name_from_db)
 end
 
 def update
-  self.
+  # self.
 end
 
 end
